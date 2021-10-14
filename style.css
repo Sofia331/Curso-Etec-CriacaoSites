@@ -21,7 +21,6 @@
     background-color: violet;
     color: rgb(68, 9, 68);
     text-transform: uppercase;
-    font-weight: bolder;
 }
 
 /* Basico HTML */
@@ -50,15 +49,8 @@
 .tabela {
     background-color:rgb(35, 4, 107);
 }
-.tabela p,table{
+.tabela p,h2,div,a{
     text-align: center;
-    color: white;
-}
-.tabela h2{
-    text-align: center;
-    color: white;
-}
-.tabela a{
     color: white;
 }
 
@@ -66,19 +58,7 @@
 .lista{
     background-color: darkred;
 }
-.lista p{
-    text-align: center;
-    color:white ;
-}
-.lista h2{
-    text-align: center;
-    color:white ;
-}
-.lista li{
-    text-align: center;
-    color:white ;
-}
-.lista a{
+.lista p,h2,ul{
     text-align: center;
     color:white ;
 }
