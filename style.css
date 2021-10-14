@@ -1,0 +1,74 @@
+
+/* HOME */
+.home{
+    background-color:blueviolet;
+}
+.home a {
+    font-style: italic;
+    color: white;
+}
+.home li {
+    color: white;
+}
+.home h1{
+    color: rgb(217, 179, 253);
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home a:hover {
+    background-color: violet;
+    color: rgb(68, 9, 68);
+    text-transform: uppercase;
+}
+
+/* Basico HTML */
+.basicohtml {
+    background-color: aqua;
+}
+.basicohtml h2,figure,li,a {
+    text-align: center;
+    color: rgb(1, 66, 66);
+} 
+
+/* Tag IMG */
+.tagimg {
+    background-color: chocolate;
+}
+.tagimg p,figure,a{
+    text-align: center;
+    color: rgb(95, 48, 15);
+}
+.tagimg h2{
+    text-align: center;
+    color: rgb(95, 48, 15);
+}
+
+/* Tabelas */
+.tabela {
+    background-color:rgb(35, 4, 107);
+}
+.tabela p,h2,div,a{
+    text-align: center;
+    color: white;
+}
+
+/* Listas */
+.lista{
+    background-color: darkred;
+}
+.lista p,h2,ul{
+    text-align: center;
+    color:white ;
+}
+
+/* Formularios */
+.formulario{
+    background-color:hotpink;
+}
+
+.formulario p,h2,li,a{
+    text-align: center;
+    color:rgb(63, 0, 31) ;
+}
