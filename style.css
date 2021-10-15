@@ -6,7 +6,6 @@
 	height: 700px;
     background-color: rgb(48, 2, 48);
 }
-
 .introducao h1 {
     padding-top: 100px;
     text-align: center;
@@ -45,6 +44,9 @@ body {
 
 /* Basico HTML */
 .basicohtml {
+    margin: 50px auto;
+    width: 75%;
+	height: 700px;
     background-color: aqua;
 }
 .basicohtml h2,figure,li,a {
@@ -54,6 +56,9 @@ body {
 
 /* Tag IMG */
 .tagimg {
+    margin: 50px auto;
+    width: 75%;
+	height: 800px;
     background-color: chocolate;
 }
 .tagimg p,figure,a{
@@ -67,15 +72,33 @@ body {
 
 /* Tabelas */
 .tabela {
+    margin: 50px auto;
+    width: 75%;
+	height: 700px;
     background-color:rgb(35, 4, 107);
 }
-.tabela p,h2,div,a{
+.tabela p{
     text-align: center;
     color: white;
 }
-
+.tabela h2{
+    text-align: center;
+    color: white;
+}
+.tabela a{
+    text-align: center;
+    color: white;
+}
+.tabela1 {
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+}
 /* Listas */
 .lista{
+    margin: 50px auto;
+    width: 75%;
+	height: 700px;
     background-color: darkred;
 }
 .lista p,h2,ul{
@@ -85,10 +108,14 @@ body {
 
 /* Formularios */
 .formulario{
+    margin: 50px auto;
+    width: 75%;
+	height: 700px;
     background-color:hotpink;
 }
 
 .formulario p,h2,li,a{
     text-align: center;
     color:rgb(63, 0, 31) ;
+    
 }
