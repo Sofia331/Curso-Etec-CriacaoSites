@@ -5,28 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens</title>
+    <link rel="stylesheet" href="path/node_modules/keen-slider/keen-slider.min.css" />
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-    <section class="tagimg">
-        <a href="../index.html">Voltar</a>
-    <h2>Como utilizar a TAG img</h2>
-    <p>A tag img serve para adicionar no html uma imagem</p>
-    <figure>
-        <img src="../imagem/animais/dog/dog1.png" alt="Imagem de um Dog" width="150px">
-        <figcaption>Doguinho</figcaption>
-    </figure>
-    <figure>
-        <img src="../imagem/animais/dog/dog2.png" alt="Imagem de um Dog" width="150px">
-    <figcaption>Doguinho</figcaption>
-
-</figure>
-    <figure>
-    <figcaption>
-    <img src="../imagem/animais/dog/dog3.png" aalt="Imagem de um Dog" width="150px">
-    <figcaption>Doguinho</figcaption>
-</figure>
-    </section>
+    <main class="tagimg">
+        <h2>Como utilizar a TAG img</h2>
+        <p>A tag img serve para adicionar no html uma imagem</p>
+        <div id="my-keen-slider" class="keen-slider">
+            <div class="keen-slider__slide"><img src="../imagem/animais/dog/dog1.png" alt="Imagem de um Dog" width="150px">
+                <figcaption>Doguinho</figcaption></div>
+            <div class="keen-slider__slide"><img src="../imagem/animais/dog/dog2.png" alt="Imagem de um Dog" width="150px">
+                <figcaption>Doguinho</figcaption></div>
+            <div class="keen-slider__slide"><img src="../imagem/animais/dog/dog3.png" aalt="Imagem de um Dog" width="150px">
+                <figcaption>Doguinho</figcaption></div>
+          </div>
+          <script src="path/node_modules/keen-slider/keen-slider.js"></script>
+          <script>
+            var slider = new KeenSlider('#my-keen-slider')
+          </script>
+    </main>
     
+    <footer class="container">
+        <p>
+            Site Criado por Sofia Mara
+        </p>
+        <div class="redes"> 
+            <a href="https://www.instagram.com/sof_mara/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+            <a href = "mailto:sofiamara09@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/sofimara/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+            <a href="https://t.me/sof_mara" target="_blank"><img src="https://img.shields.io/badge/-Telegram-%230077B5?style=for-the-badge&logo=telegram&logoColor=white" target="_blank"></a> 
+        </div>
+        
+    </footer>
 </body>
 </html>
