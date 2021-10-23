@@ -66,6 +66,41 @@ body header img{
     z-index: 1052;
 }
 
+/* menu-responsivo */
+
+@media (max-width: 1200px)
+{
+    .container {justify-content: left;align-items: flex-start;
+        
+    }
+    ul.lista_home_header.container {
+        flex-direction: column;
+        height: 60px;
+        
+    }
+    header{
+        align-items: center;
+    }
+    header.container {
+        left: 0;
+        height: 185px;
+    }
+    footer.container {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    p {
+        padding: 25px 0 0 0 ;
+    }
+    main.container.home {
+        flex-direction: column;
+    }
+
+    
+}
+    
+
 
 /* main */
 .titulo{
@@ -203,18 +238,19 @@ body {
 }
 
 /* css */
-
 .css{
-    margin: 0px auto;
-    width: 75%;
-    height: 800px;
+    padding: 25px auto;
+    position: relative;
+    height: 600px;
     background-color: rgba(252, 117, 184, 0.6);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
+}
+.formulario h2{
+    padding: 25px;
+    text-align: center;
+    color:rgb(63, 0, 31) ;  
 }
 
-ul li {
+.css ul li {
     list-style: none;
 }
 /* bandeira Japão*/
@@ -305,7 +341,3 @@ ul li {
     position: relative;
     background-color: white;
 }
-
-
-
-
