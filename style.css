@@ -312,7 +312,9 @@ p {
     text-align: center;
     color:rgb(63, 0, 31) ;  
 }
-
+.css h2{
+    text-align: center;
+}
 .css ul li {
     list-style: none;
 }
@@ -403,4 +405,135 @@ p {
     left: 25px;
     position: relative;
     background-color: white;
+}
+
+
+/* Atvidade Calculadora*/
+.calculadora h2{
+    padding: 25px;
+    text-align: center;
+}
+.calculadora{
+    height: 650px;
+}
+.calculadora1{
+	background-color: #303030;
+	margin: 50px;
+	width: 350px;
+	height: 475px;
+	margin: 0 auto;			
+	border-radius: 20px;
+	padding: 10px;
+    box-shadow: 0 +10px 0 #242424;
+}
+
+.calculadora1 p{
+	background-color: #d1e0e0;
+	width: 260px;
+	height: 50px;
+	border-radius: 20px;
+	margin: 25px auto;	
+	font-size: xx-large;
+	color: #000000;
+	text-align: right;
+    
+
+}
+
+.calculadora1 table{
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	margin: 25px;
+	border-radius: 20px;
+}
+
+.calculadora1 td{
+	width: 140px;
+	height: 70px;
+	text-align: center;
+	font-size: xx-large;
+
+}
+
+.orange{
+	color: orange;
+}
+
+.calculadora1 td:active{
+	background-color: #e0e0d1;
+	border-radius: 20px;
+}
+.igual{
+    border-radius: 0 0 20px  0 ;
+    background-color: orange;
+}
+.norm{
+    background-color: rgb(156, 156, 156);
+}
+.b11{
+    border-radius:  0 0 0 20px ;
+}
+.b111{
+    border-radius: 0 20px 0 0 ;
+}
+.b1111{
+    border-radius:  20px 0 0 0 ;
+}
+.stb{
+    list-style: none;
+}
+
+.calculadora2 ul{
+    padding: 0;
+    display: flex;
+    margin: 0px 0px 8px;
+    
+}
+.calculadora2 ul li{
+    margin: 2.5px;
+    width: 140px;
+	height: 70px;
+	text-align: center;
+	font-size: xx-large;
+    display: flex;
+    flex-direction:column;
+}
+.calculadora2{
+	background-color: #303030;
+	margin: 50px;
+	width: 350px;
+	height: 455px;
+	margin: 0 auto;			
+	border-radius: 20px;
+	padding: 10px;
+    box-shadow: 0 +10px 0 #242424;
+}
+
+.calculadora2 p{
+	background-color: #d1e0e0;
+	width: 300px;
+	height: 50px;
+	border-radius: 20px;
+	font-size: xx-large;
+	color: #000000;
+	text-align: right;
+    margin: 12px 0 16px;
+
+    
+
+}
+
+.calculadora2 table{
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	margin: 25px;
+	border-radius: 20px;
+}
+
+.calculadora2 td{
+	width: 140px;
+	height: 70px;
+	text-align: center;
+	font-size: xx-large;
+
 }
