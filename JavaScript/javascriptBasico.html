@@ -10,22 +10,13 @@
         function sendNum(x){
             document.getElementById('screen').innerHTML += x;
         }
-
-        function equalTo(){
-            document.getElementById('screen').innerHTML = '';
-            for(i=0; i<num.length ; i++){
-                b += num[i];						// concatenating the array "num" into a single string
-            }
-            ans = eval(b);	
-            document.getElementById('screen').innerHTML = ans;		// result display
-            while(num.length > 0){
-                num.pop();				// emptying the array "num"
-            }
-            num.push(ans.toString());
+        function somar(){
+            
         }
-        
     </script>   
 </head>
+
+
 <body>
     <header class="container">
         <a href=../index.html><img  alt="Sofia-pic"  src="https://user-images.githubusercontent.com/62350286/135948569-31b06805-2123-472a-b8cb-4de10ee702cb.png"></a>
@@ -64,43 +55,53 @@
         </ul>
     </nav> 
     </header>
+    
+    <main>
+        <!-- <script>
+            for (let i = 0; i <= 10; i++) {
+                // console.log("2 X " + i + " = " + valor2 * i);
+                // document.write("2 X " + i + " = " + valor2 * i + "<br>");
+                document.write("<li>" + "2 X " + i + " = " + valor2 * i + "</li>");
+            }
+        </script> -->
+        <div id="tabuada"></div>
+        <input type="number" id="valor">
+        <button onclick="tabuada()">Calcular</button>
+        <script>
+            function tabuada() {
+                let valor = document.getElementById('valor').value;
+                for (let i = 0; i <= 10; i++) {
+                    let exibir = valor + " X " + i + " = " + valor * i;
+                    console.log(exibir);
+                    document.getElementById('tabuada').innerHTML += exibir + "<br>";
+                }
+                // 
+                let valor = document.getElementById('valor').value;
+                let exibir = '';
+                for (let i = 0; i <= 10; i++) {
+                    exibir += valor + " X " + i + " = " + valor * i + "<br>";
+                    console.log(exibir);
+                }
+                document.getElementById('tabuada').innerHTML = exibir;
+            }
+            function consumoVeiculo(){
+                /*
+                litros por km
+                600km/40lts = 15km/lts
 
+                40lts
+                0km
 
-    <main class="calculadora">
-        <h2>Atividade de criação de uma calculadora</h2>
-        <div class="calculadora1" >
-            <p id="screen"></p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td value = "4" type = "button" class='norm b1111'onclick="sendNum('7')">7</td>
-                        <td class='norm 'onclick="sendNum('8')">8</td>
-                        <td class='norm 'onclick="sendNum('9')">9</td>
-                        <td class='norm b111'onclick="sendNum('/')">%</td>
-                    </tr>
-                    <tr>
-                        <td class='norm' onclick="sendNum('4')">4</td>
-                        <td class='norm' onclick="sendNum('5')">5</td>
-                        <td class='norm' onclick="sendNum('6')">6</td>
-                        <td class='norm' onclick="sendNum('*')">x</td>
-                    </tr>
-                    <tr>
-                        <td class='norm ' onclick="sendNum('1')">1</td>
-                        <td class='norm 'onclick="sendNum('2')">2</td>
-                        <td class='norm 'onclick="sendNum('3')">3</td>
-                        <td class='norm 'onclick="sendNum('-')">-</td>
-                    </tr>
-                    <tr>
-                        <td class='norm b11'onclick="sendNum('.')">.</td>
-                        <td class='norm'onclick="sendNum('0')">0</td>
-                        <td class='norm 'onclick="sendNum('+')">+</td>
-                        <td class='igual'onclick="equalTo()">=</td>
-                    </tr>	
-                </tbody>
-            </table>
-        </div>
+                112km
+                3lts
+                112km/3lts = 37.33km/lts
+
+                let vm,espaco,tempo;
+                vm = espaco/tempo;
+                */
+            }
+        </script>
     </main>
-        
     <footer class="container">
         <p>
             Site Criado por Sofia Mara
@@ -113,6 +114,6 @@
         </div>
         
     </footer>
-    
 </body>
+
 </html>
