@@ -7,10 +7,66 @@
     <title>Calculadora</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <script>
-        function sendNum(x){
-            document.getElementById('screen').innerHTML += x;
-        }
+        function writeNumber(elementId) {
+  var outputValueTo = document.getElementById('field1');
 
+  if (outputValueTo.value == '0' || outputValueTo.value == 'Syntax error') {
+    outputValueTo.value = elementId.textContent;
+  } else {
+
+    outputValueTo.value += elementId.textContent;
+  }
+}
+
+function cleartxt() {
+  document.getElementById('field1').value = '0';
+  document.getElementById('dec').disabled = false;
+}
+
+function setOperator(elementId) {
+  var outputValueTo = document.getElementById('field1');
+  if (outputValueTo.value == '0' || outputValueTo.value == 'Syntax error') {
+    outputValueTo.value = '0';
+  } else {
+    outputValueTo.value += elementId.textContent;
+    document.getElementById('dec').disabled = false;
+  }
+}
+
+function setDecimal(elementId, status) {
+  var outputValueTo = document.getElementById('field1');
+  outputValueTo.value += elementId.textContent;
+  document.getElementById('dec').disabled = status;
+}
+
+function calculate() {
+
+  try {
+
+    var field1txt = document.getElementById('field1');
+    if (field1txt.value != '') {
+      var calculateResult = eval(field1txt.value);
+      field1txt.value = calculateResult;
+    }
+  } catch (err) {
+
+    field1txt.value = 'Syntax error';
+
+  }
+
+}
+
+function removeLastNumber() {
+
+  var field1txt = document.getElementById('field1');
+
+  if (field1txt.value.length == 1 || field1txt.value == '0' || field1txt.value == 'Syntax error') {
+    field1txt.value = '0';
+    document.getElementById('dec').disabled = false;
+  } else {
+    field1txt.value = field1txt.value.substring(0, field1txt.value.length - 1);
+  }
+}
     </script>   
 </head>
 <body>
@@ -55,37 +111,40 @@
 
     <main class="calculadora">
         <h2>Atividade de criação de uma calculadora</h2>
-        <div class="calculadora1" >
-            <p id="screen"></p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class='norm b1111'onclick="sendNum('7')">7</td>
-                        <td class='norm 'onclick="sendNum('8')">8</td>
-                        <td class='norm 'onclick="sendNum('9')">9</td>
-                        <td class='norm b111'onclick="sendNum('/')">%</td>
-                    </tr>
-                    <tr>
-                        <td class='norm' onclick="sendNum('4')">4</td>
-                        <td class='norm' onclick="sendNum('5')">5</td>
-                        <td class='norm' onclick="sendNum('6')">6</td>
-                        <td class='norm' onclick="sendNum('*')">x</td>
-                    </tr>
-                    <tr>
-                        <td class='norm ' onclick="sendNum('1')">1</td>
-                        <td class='norm 'onclick="sendNum('2')">2</td>
-                        <td class='norm 'onclick="sendNum('3')">3</td>
-                        <td class='norm 'onclick="sendNum('-')">-</td>
-                    </tr>
-                    <tr>
-                        <td class='norm b11'onclick="sendNum('.')">.</td>
-                        <td class='norm'onclick="sendNum('0')">0</td>
-                        <td class='norm 'onclick="sendNum('+')">+</td>
-                        <td class='igual'onclick="equalTo()">=</td>
-                    </tr>	
-                </tbody>
-            </table>
-        </div>
+        <section class="calculadora1">
+            <article>
+              <div id='content'>
+                <div id='content-app'>
+                  <input type='text' id='field1' readonly value='0' />
+                  <br /><br />
+                  <button class='norm b1111' onclick='writeNumber(this)' id='n1'>1</button>
+                  <button class='norm ' onclick='writeNumber(this)' id='n2'>2</button>
+                  <button class='norm ' onclick='writeNumber(this)' id='n3'>3</button>
+                  <button class='norm ' onclick='writeNumber(this)' id='n4'>4</button>
+                  <br /><br />
+                  <button onclick='writeNumber(this)' id='n5'>5</button>
+                  <button onclick='writeNumber(this)' id='n6'>6</button>
+                  <button onclick='writeNumber(this)' id='n7'>7</button>
+                  <button onclick='writeNumber(this)' id='n8'>8</button>
+                  <br /><br />
+                  <button onclick='writeNumber(this)' id='n9'>9</button>
+                  <button onclick='writeNumber(this)' id='n0'>0</button>
+                  <button onclick='setDecimal(this,true)' id='dec'>.</button>
+                  <button onclick='setOperator(this)' id='sum'>+</button>
+                  <br /><br />
+                  <button onclick='setOperator(this)' id='sustract'>-</button>
+                  <button onclick='setOperator(this)' id='multi'>*</button>
+                  <button onclick='setOperator(this)' id='divide'>/</button>
+                  <button onclick='cleartxt()' id='C'>C</button>
+                  <br /><br />
+                  <button onclick='calculate()' id='calcular' style='width:190px'>=</button>
+                  <button onclick='removeLastNumber()' id='removeLast'>B</button>
+                </div>
+              </div>
+              <br />
+              <br /><br />
+            </article>
+          </section>
     </main>
         
     <footer class="container">

@@ -4,17 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <script>
-        function sendNum(x) {
-            var outputValueTo = document.getElementsByClassName('screen');
-            if (outputValueTo.value == '0' || outputValueTo.value == 'Syntax error') {
-                outputValueTo.value = x.textContent;
-            } else {
-                outputValueTo.value += x.textContent;
-            }
-}
-    </script>
+    <title>JS</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header class="container">
@@ -61,7 +52,7 @@
                     <li><a href="calculadora.html">Calculadora </a></li>
                     <li><a href="calculadorastb.html">Calculadora sem utilizar Tb</a></li>
                     <li><a href="pokebola.html"> Pokebola</a></li>
-                    <li><a href="coracao.html">Coração</a></li>
+                    <li><a href="coracao.html">Atividade de criação de um coração</a></li>
                 </ul>
             </li>
             </ul>
@@ -70,37 +61,16 @@
     </nav> 
 </header>
 
-
-    <main class="calculadora">
-        <h2>Atividade de criação de uma calculadora</h2>
-        <div class="calculadora2" >
-            <p id="screen">0</p>
-                    <ul>
-                            <li class='norm b1111 stb' onclick="sendNum('7')">7</li>
-                            <li class='norm  stb'onclick="sendNum('8')">8</li>
-                            <li class='norm  stb'onclick="sendNum('9')">9</li>
-                            <li class='norm b111 stb'onclick="sendNum('*0.01')">%</li>
-                    </ul>
-                    <ul>
-                        <li class='norm  stb 'onclick="sendNum('4')">4</li>
-                        <li class='norm  stb'onclick="sendNum('5')">5</li>
-                        <li class='norm  stb'onclick="sendNum('6')">6</li>
-                        <li class='norm  stb'onclick="sendNum('*')">x</li>
-                    </ul>
-                    <ul>
-                        <li class='norm  stb' onclick="sendNum('1')">1</li>
-                        <li class='norm  stb'onclick="sendNum('2')">2</li>
-                        <li class='norm  stb'onclick="sendNum('3')">3</li>
-                        <li class='norm  stb'onclick="sendNum('-')">-</li>
-                    </ul>
-                    <ul>
-                        <li class='norm b11 stb'onclick="sendNum('.')">.</li>
-                        <li class='norm stb'onclick="sendNum('0')">0</li>
-                        <li class='norm stb 'onclick="sendNum('+')">+</li>
-                        <li class='igual stb'onclick="equalTo()">=</li>
-                    </ul>	
-                
-        </div>
+    <main class="css">
+    <h2>Aplicações utilizando com JS</h2>  
+      <ul>
+        <li><a href="troca.html">Atividade de Trocar local de A e b</a></li>
+        <li><a href="Multiplos.html">Atividade dos Multiplos de 7</a></li>
+        <li><a href="MultiplosSoma.html">Atividade da Soma dos Multiplos de 7</a></li>
+        <li><a href="javascriptBasico.html">JS Basico</a></li>
+        <li><a href="FelizNatal.html">Atividade do 'Feliz Natxl</a></li>
+        <li><a href="Cardapio.html">Atividade dO Cardapio</a></li>
+      </ul>
     </main>
         
     <footer class="container">
